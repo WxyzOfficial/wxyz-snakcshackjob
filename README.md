@@ -21,4 +21,6 @@
 	    ['burger'] = math.random(90, 95),
      -- Drink
       ['cocktail'] = math.random(90, 95),
+
+	-- Add images to qb-inventory
     
