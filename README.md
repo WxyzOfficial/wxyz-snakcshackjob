@@ -12,15 +12,26 @@
         ["bun"]                = {["name"] = "bun",                 ["label"] = "Bun",           ["weight"] = 1,       ["type"] = "item",      ["image"] = "bun.png",        ["unique"] = false,     ["useable"] = true,     ["shouldClose"] = true,    ["combinable"] = nil,   ["description"] = "Burger Bun"},
         ["patty"]                = {["name"] = "patty",                 ["label"] = "Patty",           ["weight"] = 1,       ["type"] = "item",      ["image"] = "patty.png",        ["unique"] = false,     ["useable"] = true,     ["shouldClose"] = true,    ["combinable"] = nil,   ["description"] = "patty"},
         ["ketchup"]                = {["name"] = "ketchup",                 ["label"] = "Ketchup",           ["weight"] = 1,       ["type"] = "item",      ["image"] = "ketchup.png",        ["unique"] = false,     ["useable"] = true,     ["shouldClose"] = true,    ["combinable"] = nil,   ["description"] = "Tomato ketchup"},        
-
-	-- juice ingridient
     ["strawberry"]                = {["name"] = "strawberry",                 ["label"] = "Strawberry",           ["weight"] = 1,       ["type"] = "item",      ["image"] = "strawberry.png",        ["unique"] = false,     ["useable"] = true,     ["shouldClose"] = true,    ["combinable"] = nil,   ["description"] = "strawberry"},
 
-	-- add this to qb-smallresources/config.lua - consumables.
+      -- add this to qb-smallresources/config.lua - consumables.
       -- Eat
 	    ['burger'] = math.random(90, 95),
      -- Drink
       ['cocktail'] = math.random(90, 95),
+
+	-- Add this to qb-core/shared/jobs.lua
+	snack = {
+		label = 'Snack Shack',
+		defaultDuty = true,
+		offDutyPay = false,
+		grades = {
+            ['0'] = { name = 'Trainee', payment = 50 },
+			['1'] = { name = 'Employee', payment = 100 },
+			['2'] = { name = 'Owner', isboss = true, payment = 150 },
+		},
+	},
+
 
 	-- Add images to qb-inventory
     
