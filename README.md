@@ -35,3 +35,6 @@
 
 	-- Extract img.rar and add images to qb-inventory
     
+	-- Add wxyz-snackshackjob to your resource folder
+	-- ensure wxyz-snakcshackjob
+	-- restart server.
